@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style>img {display:block}</style>
+</head>
+<body bgcolor="#E6E6E6">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#E6E6E6">
+    <tr>
+        <td width="700" align="center" valign="top">
+            <table width="700" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+				<tr>
+                	<td width="700" height="30" align="center" valign="middle" style="font-family:Times New Roman, Times, serif; font-size:14px; font-weight:normal; color:#FFFFFF; background-color:#8A7A67; border-top:solid 2px #D8D3CA; border-left:solid 2px #D8D3CA; border-right:solid 2px #D8D3CA;">You are receiving this message from Lit&eacute;ra Secure File Transfer&nbsp;&nbsp;&ndash;&nbsp;&nbsp;<a href="https://secure.litera.com" style="color:#FFFFFF;" title="Log into your Lit&eacute;ra secure large file account" target="_blank">secure.litera.com</a></td>
+                </tr>
+            </table>
+            <table width="700" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+				<tr>
+                    <td width="700" height="100" align="center" valign="bottom" style="border-left:solid 2px #D8D3CA; border-right:solid 2px #D8D3CA;"><img src="{{ MEDIA_URL }}images/litera_email_logo.png" width="696" height="100" border="0" alt="Lit&eacute;ra" style="display:block; vertical-align:bottom;" /></td>
+                </tr>
+            </table>
+            <table width="700" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+				<tr>
+                	<td width="18" align="left" valign="top" style="border-left:solid 2px #D8D3CA;">&nbsp;</td>
+                    <td width="660" align="center" valign="top" style="font-family:Times New Roman, Times, serif; font-size:26px; color:#AD1F24; padding:10px 0px;">Important information: message limit reached</td>
+                	<td width="18" align="right" valign="top" style="border-right:solid 2px #D8D3CA;">&nbsp;</td>
+                </tr>
+            </table>
+            <table width="700" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+				<tr>
+                	<td width="18" align="left" valign="top" style="border-left:solid 2px #D8D3CA;">&nbsp;</td>
+                    <td width="660" align="left" valign="top" style="font-family:Times New Roman, Times, serif; font-size:14px; line-height:26px; color:#333333; padding:5px 0px;">
+                    	This is a notification from Lit&eacute;ra Secure File Transfer regarding your message limits.
+                    </td>
+                	<td width="18" align="right" valign="top" style="border-right:solid 2px #D8D3CA;">&nbsp;</td>
+                </tr>
+            </table>
+            <table width="700" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+				<tr>
+                	<td width="18" align="left" valign="top" style="border-left:solid 2px #D8D3CA;">&nbsp;</td>
+                    <td width="660" align="left" valign="top" style="font-family:Times New Roman, Times, serif; font-size:14px; line-height:26px; color:#333333; padding:5px 0px;">
+                    	You have reached your monthly message limit of <span style="color:#AD1F24; font-weight:bold;">{{ package.messages_per_month }}</span>.
+                    </td>
+                	<td width="18" align="right" valign="top" style="border-right:solid 2px #D8D3CA;">&nbsp;</td>
+                </tr>
+            </table>
+            <table width="700" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+				<tr>
+                	<td width="18" align="left" valign="top" style="border-left:solid 2px #D8D3CA;">&nbsp;</td>
+                    <td width="660" align="left" valign="top" style="font-family:Times New Roman, Times, serif; font-size:14px; line-height:26px; color:#333333; padding:5px 0px;">
+                        {% if package.hard_message_limit %}
+                        You will be unable to send any more secure messages this month.
+                        {% else %}
+                        Sending further emails this month may incur extra charges.
+                        {% endif %}
+                    </td>
+                	<td width="18" align="right" valign="top" style="border-right:solid 2px #D8D3CA;">&nbsp;</td>
+                </tr>
+            </table>
+            <table width="700" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+				<tr>
+                	<td width="18" align="left" valign="top" style="border-left:solid 2px #D8D3CA;">&nbsp;</td>
+                    <td width="660" align="left" valign="top" style="font-family:Times New Roman, Times, serif; font-size:14px; line-height:26px; color:#333333; padding:5px 0px;">
+                        To increase your monthly message quota, or for further information, please contact <a href="mailto:customer-service@litera.com" style="color:#AD1F24;" title="Contact the Lit&eacute;ra support team by email">customer-service@litera.com</a>
+                        <br /><br />
+                        Kind Regards
+                        <br />
+                        The Lit&eacute;ra Support Team
+                        <br /><br />
+                    </td>
+                	<td width="18" align="right" valign="top" style="border-right:solid 2px #D8D3CA;">&nbsp;</td>
+                </tr>
+            </table>
+            <table width="700" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+				<tr>
+                	<td width="700" height="30" align="center" valign="middle" style="font-family:Times New Roman, Times, serif; font-size:14px; font-weight:normal; color:#FFFFFF; background-color:#8A7A67; border-bottom:solid 2px #D8D3CA; border-left:solid 2px #D8D3CA; border-right:solid 2px #D8D3CA;">&copy;&nbsp;2012 Lit&eacute;ra&nbsp;&nbsp;&ndash;&nbsp;&nbsp;All rights reserved.</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+</body>
+</html>
